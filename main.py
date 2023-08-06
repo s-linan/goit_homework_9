@@ -47,7 +47,7 @@ def phone_handler(data):
 def show_all_handler(data):
     if len(CONTACTS) == 0:
         return 'Contact list is empty'
-    return '\n'.join([f"{name}:  {''.join(str(phone))}" for name, phone in CONTACTS.items()])
+    return '\n'.join([f"{name}:  {str(phone)}" for name, phone in CONTACTS.items()])
 
 
 @input_error
